@@ -9,6 +9,11 @@
     width: 80px;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .module-border-wrap {
     max-width: 760px;
     padding: 1rem;
@@ -42,8 +47,9 @@
     color: gray;
     text-decoration: none;
     padding: 18px;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
     transition: .3s;
+    margin-right: 14px;
 }
 
 .listitem:hover {
@@ -66,6 +72,36 @@
     background-color: #363b81;
 }
 
+
+
+.btn-grad {background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: inline-block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+
+@media (width <= 1000px) {
+    .listitem {
+        padding: 10px 10px 0px 10px;
+    }
+}
+
 @media (width <= 768px) {
     #products {
         text-align: center;
@@ -81,5 +117,20 @@
 
     #main-container {
         padding: 10px;
+    }
+  
+}
+
+@media (width <= 480px) {
+    #cool-cards-logo {
+        margin-right: 10px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 20px;
     }
 }
