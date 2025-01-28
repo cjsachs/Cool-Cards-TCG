@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Smooch+Sans:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Smooch Sans", serif;
+}
+
+#cool-cards-logo {
+    width: 80px;
+}
+
+.module-border-wrap {
+    max-width: 760px;
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to right, #ff1f1f, #fbd743, #5db9ff, #363b81);
+    padding: 3px;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+  
+  .module {
+    background: white;
+    color: white;
+    padding: 2rem;
+  }
+
+.theme-yellow {
+    background-color: #fbd743;
+}
+
+.theme-red {
+    background-color: #ff1f1f;
+}
+
+.theme-light-blue {
+    background-color: #5db9ff;
+}
+
+.listitem {
+    font-size: 18px;
+    color: gray;
+    text-decoration: none;
+    padding: 18px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.listitem:hover {
+    color: white;
+}
+
+.item-1:hover {
+    background-color: #ff1f1f;
+}
+
+.item-2:hover {
+    background-color: #fbd743;
+}
+
+.item-3:hover {
+    background-color: #5db9ff;
+}
+
+.item-4:hover {
+    background-color: #363b81;
+}
+
+@media (width <= 768px) {
+    #products {
+        text-align: center;
+    }
+
+    #products img {
+        width: 100%;
+    }
+
+    #contact {
+        text-align: center;
+    }
+
+    #main-container {
+        padding: 10px;
+    }
+}
